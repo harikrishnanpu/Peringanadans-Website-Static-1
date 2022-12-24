@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: url(./images/papper.webp) center cover no-repeat;
+    background-image: url(./images/papper.webp);
+}
+
+
+
+#navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: .5rem 5rem;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    background: #6CC51D;
+}
+.navbar .navbar-brand{
+    font-size: 1.5rem;
+    color: #000 !important;
+    font-family: 'Oranienbaum', serif;
+
+}
+#navbarSupportedContent a{
+    color: #fff;
+    border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid #F14336;
+    transition: 1s;
+}
+#navbarSupportedContent button{
+    background: #CC8A58;
+    padding: 8px 22px;
+    border-radius: 15px;
+    transition: 1s;
+    color: white;
+}
+section{
+    width: 98%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+/****Home*****/
+
+#home{
+    background: url(./images/logo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 20px;
+    height: 250px;
+    width: 95%;
+}
+#home h1{
+    font-size: 100px;
+    color: white;
+    letter-spacing: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#home p{
+    font-size: 25px;
+    color: #fff;
+}
+#home .input-group{
+    width: 40%;
+    height: 45px;
+}
+.signin{
+    background : #CC8A58 !important;
+    color: white !important;
+    box-shadow: 2px 4px 5px rgba(0,0,0,.3);
+    margin: auto;
+}
+
+.signin1{
+    background : #cf251dcb !important;
+    color: white !important;
+    box-shadow: 2px 4px 5px rgba(0,0,0,.3);
+    margin: auto;
+}
+
+/*****About******/
+
+#about{
+    background:  linear-gradient( rgba(0,0,0,0), rgba(32, 76, 49, 0.766)), url(./images/bgg.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    margin: 10px auto;
+    width: 95%;
+}
+#about h1{
+    font-weight: 800;
+    font-size: 50px;
+    color:white;
+}
+#about p{
+    color: white;
+}
+
+/*****Products****/
+
+#product{
+    background :#e5e5e5;
+    width: 95%;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#product h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+#product img{
+    width: 160px;
+    height: 150px;
+    border-radius: 50px;
+}
+.card{
+    width: 200px;
+    height: 250px;
+    background : #e5e5e5 !important;
+    border :none !important;
+    border-radius: 5px !important;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    transition: .2s;
+}
+
+
+/****Contact****/
+
+#contact img{
+    height: 100%;
+}
+.box{
+    width: 80% !important;
+    margin-top: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+#contact input{
+    margin: 10px 0px;
+}
+#contact textarea{
+    margin: 10px 0px;
+}
+
+.banner-image{
+    height: 110px;
+    width: 100px;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    margin: 10px;
+}
+
+.banner-image1{
+    height: 100px;
+    width: 150px;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    margin: 10px;
+}
+
+.logo{
+    width: 400px;
+    height: 350px;
+}
+
+.bg1{
+    position: absolute;
+    right: 10px;
+    height: 200px;
+    width: 150px;
+}
+
+#customer{
+    width: 95%;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.customer-img{
+    width: 100px;
+    height: 80px;
+    border-radius: 100px;
+
+}
+
+.map{
+    height: 300px;
+    width: 200px;
+
+}
+
+.footer{
+    width: 90% !important;
+    background-color: #CC8A58;
+    border-radius: 20px;
+
+}
+
+.flogo{
+    height: 45px;
+}
+
+@media screen and (max-width: 600px){
+    #navbar{
+        border-bottom-left-radius: 18px;
+        border-bottom-right-radius: 18px;
+    }
+
+    #home{
+        min-height: 50px;
+    }
+
+    .logo{
+        width: 300px;
+        height: 200px;
+    }
+
+    .hidden{
+        display: none;
+    }
+}
